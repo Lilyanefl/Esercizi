@@ -1,0 +1,55 @@
+body {
+  font: 2rem "Indie Flower";
+}
+
+main {
+  background-color: gray;
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+main div {
+  background-color: rgb(240, 240, 170);
+  background-image: linear-gradient(
+    rgb(240, 240, 170) 0%,
+    rgb(199, 199, 16) 75%,
+    rgb(250, 189, 20) 93%
+  );
+  padding: 2em;
+  margin: 0.7em;
+  box-shadow: 3px 3px 5px black;
+  transform: rotate(-4deg);
+}
+
+main div:nth-child(even) {
+  background-color: rgb(208, 250, 208);
+  background-image: linear-gradient(
+    rgb(208, 250, 208) 0%,
+    rgb(158, 189, 158) 75%,
+    rgb(146, 180, 146) 93%
+  );
+  transform: rotate(10deg);
+}
+
+main div:nth-child(3n) {
+  background-color: rgb(222, 222, 250);
+  background-image: linear-gradient(
+    rgb(222, 222, 255) 0%,
+    rgb(155, 155, 185) 75%,
+    rgb(180, 158, 197) 93%
+  );
+  transform: rotate(10deg);
+}
+
+main div:hover {
+  transform: scale(1.25);
+  box-shadow: 8px 8px 5px black;
+  z-index: 10;
+}
